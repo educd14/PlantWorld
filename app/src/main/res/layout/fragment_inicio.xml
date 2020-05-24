@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textoinicio"
+        android:id="@+id/textoenf1"
         android:layout_width="405dp"
         android:layout_height="83dp"
         android:layout_marginTop="52dp"
@@ -40,11 +40,11 @@
         android:layout_width="75dp"
         android:layout_height="76dp"
         android:layout_marginTop="40dp"
-        android:background="@drawable/ic_dashboard_black_24dp"
+        android:background="@drawable/gallery4"
         app:layout_constraintEnd_toStartOf="@+id/btncamera"
         app:layout_constraintHorizontal_bias="0.524"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textoinicio" />
+        app:layout_constraintTop_toBottomOf="@+id/textoenf1" />
 
     <Button
         android:id="@+id/btncamera"
@@ -53,8 +53,8 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="76dp"
         android:layout_marginRight="76dp"
-        android:background="@drawable/ic_notifications_black_24dp"
+        android:background="@drawable/camera4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textoinicio" />
+        app:layout_constraintTop_toBottomOf="@+id/textoenf1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

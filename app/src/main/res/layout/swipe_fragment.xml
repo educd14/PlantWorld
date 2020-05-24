@@ -10,8 +10,8 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="61dp"
-        android:layout_marginEnd="105dp"
-        android:layout_marginRight="105dp"
+        android:layout_marginTop="158dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginRight="99dp"
         tools:srcCompat="@tools:sample/avatars" />
 </RelativeLayout>

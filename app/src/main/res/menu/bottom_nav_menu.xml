@@ -4,17 +4,17 @@
 
     <item
         android:id="@+id/navigation_enfermedades"
-        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:icon="@drawable/antivirus3"
         android:title="@string/enfermedades" />
 
     <item
         android:id="@+id/navigation_inicio"
-        android:icon="@drawable/ic_home_black_24dp"
+        android:icon="@drawable/house3"
         android:title="@string/inicio" />
 
     <item
         android:id="@+id/navigation_favoritos"
-        android:icon="@drawable/ic_notifications_black_24dp"
+        android:icon="@drawable/plantpot2"
         android:title="@string/Favoritos" />
 
 </menu>

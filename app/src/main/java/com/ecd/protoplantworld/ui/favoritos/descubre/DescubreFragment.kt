@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.PagerAdapter
 import androidx.viewpager.widget.ViewPager
@@ -14,7 +13,7 @@ import com.ecd.protoplantworld.R
 class DescubreFragment : Fragment(){
 
     lateinit var mPager: ViewPager
-    var path: IntArray = intArrayOf(R.drawable.ic_dashboard_black_24dp,R.drawable.ic_home_black_24dp,R.drawable.ic_launcher_background,R.drawable.ic_launcher_foreground,R.drawable.ic_notifications_black_24dp)
+    var path: IntArray = intArrayOf(R.drawable.clivia_miniata,R.drawable.agapanto,R.drawable.ficus_benjamina_5_0,R.drawable.crisantemo,R.drawable.hiedra)
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -40,8 +39,9 @@ class DescubreFragment : Fragment(){
 
             }
             override fun onPageSelected(position: Int) {
-                Toast.makeText(context, path[position], Toast.LENGTH_LONG).show()
+
             }
+
         })
     }
 

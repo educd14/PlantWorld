@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 
 import androidx.fragment.app.Fragment
 
@@ -12,7 +13,6 @@ import androidx.viewpager.widget.ViewPager
 
 import com.ecd.protoplantworld.R
 import com.google.android.material.tabs.TabLayout
-import kotlinx.android.synthetic.main.fragment_favoritos.*
 
 
 class FavoritosFragment : Fragment() {
@@ -24,6 +24,8 @@ class FavoritosFragment : Fragment() {
         favoritosViewModel = ViewModelProviders.of(this).get(FavoritosViewModel::class.java).apply {
             setIndex(arguments?.getInt(ARG_SECTION_NUMBER) ?: 1)
         }
+
+
     }
 
     override fun onCreateView(
@@ -33,7 +35,7 @@ class FavoritosFragment : Fragment() {
     ): View? {
         favoritosViewModel =
             ViewModelProviders.of(this).get(FavoritosViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_favoritos, container, false)
+        val root = inflater.inflate(R.layout.viewpage_favoritos, container, false)
 
         val vp = root.findViewById<ViewPager>(R.id.view_pager)
         val tabs = root.findViewById<TabLayout>(R.id.tabs)

@@ -36,18 +36,19 @@
 
                 android:src="#00FFFFFF"
                 app:layout_collapseMode="parallax" />
+
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="match_parent">
 
-
-        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
-
-        <include layout="@layout/content_planta" />
-
+        <include
+            layout="@layout/content_planta"
+            android:layout_width="match_parent"
+            android:layout_height="639dp"
+            android:layout_marginTop="200dp" />
     </androidx.core.widget.NestedScrollView>
 
 

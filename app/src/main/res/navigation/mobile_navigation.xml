@@ -21,5 +21,5 @@
         android:id="@+id/navigation_favoritos"
         android:name="com.ecd.protoplantworld.ui.favoritos.FavoritosFragment"
         android:label="@string/Favoritos"
-        tools:layout="@layout/fragment_favoritos" />
+        tools:layout="@layout/viewpage_favoritos" />
 </navigation>
