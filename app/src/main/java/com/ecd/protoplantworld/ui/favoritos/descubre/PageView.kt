@@ -34,7 +34,7 @@ class PageView : PagerAdapter {
         inflator = con.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         var rv: View = inflator.inflate(R.layout.swipe_fragment, container, false)
         img = rv.findViewById(R.id.img) as ImageView
-        img.setImageResource(path[(0..4).random()])
+        img.setImageResource(path[(0..8).shuffled().first()])
         container!!.addView(rv)
         return rv
         }

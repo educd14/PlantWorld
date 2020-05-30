@@ -13,21 +13,19 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
-import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
+import com.ecd.protoplantworld.Enfermedades
 import com.ecd.protoplantworld.Neuronal.Classifier
 import com.ecd.protoplantworld.R
-import com.ecd.protoplantworld.planta
+import com.ecd.protoplantworld.Planta
 import com.ecd.protoplantworld.ui.inicio.InicioViewModel
 import java.io.IOException
 
 class EnfermedadesFragment : Fragment() {
 
     private lateinit var enfermedadesViewModel: EnfermedadesViewModel
-    var plantaN: String = ""
+    var enfermedad: String = ""
     private lateinit var inicioViewModel: InicioViewModel
 
 
@@ -35,13 +33,13 @@ class EnfermedadesFragment : Fragment() {
     private lateinit var mBitmap: Bitmap
     private lateinit var mBitmap1: Bitmap
 
-    private val mCameraRequestCode2 = 0
-    private val mGalleryRequestCode2 = 2
+    private val mCameraRequestCode2 = 1
+    private val mGalleryRequestCode2 = 3
 
-    private val ancho = 168
-    private val alto = 300
-    private val mModelPath = "Plantworld.tflite"
-    private val mLabelPath = "plant_labels.txt"
+    private val ancho = 224
+    private val alto = 224
+    private val mModelPath = "enfermedades.tflite"
+    private val mLabelPath = "enfermedades_labels.txt"
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -84,22 +82,22 @@ class EnfermedadesFragment : Fragment() {
                 mBitmap = data.extras!!.get("data") as Bitmap
                 mBitmap1 = scaleImage(mBitmap)
                 val results = mClassifier.recognizeImage(mBitmap1).firstOrNull()
-                if (results?.title == "Callisia fragrans") {
+                if (results?.title == "apple black rot") {
 
-                    plantaN = "Callisia fragrans"
-                    val myIntent = Intent(this.activity, planta::class.java)
-                    myIntent.putExtra("plantaN", plantaN)
+                    enfermedad = "apple black rot"
+                    val myIntent = Intent(this.activity, Enfermedades::class.java)
+                    myIntent.putExtra("enfermedad", enfermedad)
                     myIntent.putExtra("foto", mBitmap)
 
                     val fav2 = view.findViewById<ImageView>(R.id.fav2)
                     val d = BitmapDrawable(resources, mBitmap1)
                     fav2.background = d
                     this.activity!!.startActivity(myIntent)
-                }else if (results?.title == "heuchera micrantha"){
+                }else if (results?.title == "squash powdery mildew"){
 
-                    plantaN = "heuchera micrantha"
-                    val myIntent = Intent(this.activity, planta::class.java)
-                    myIntent.putExtra("plantaN", plantaN)
+                    enfermedad = "squash powdery mildew"
+                    val myIntent = Intent(this.activity, Enfermedades::class.java)
+                    myIntent.putExtra("enfermedad", enfermedad)
                     myIntent.putExtra("foto", mBitmap)
                     this.activity!!.startActivity(myIntent)
                 }
@@ -119,18 +117,18 @@ class EnfermedadesFragment : Fragment() {
                 println("Success!!!")
                 mBitmap1 = scaleImage(mBitmap)
                 val results = mClassifier.recognizeImage(mBitmap1).firstOrNull()
-                if (results?.title == "Callisia fragrans") {
+                if (results?.title == "apple black rot") {
 
-                    plantaN = "Callisia fragrans"
-                    val myIntent = Intent(this.activity, planta::class.java)
-                    myIntent.putExtra("plantaN", plantaN)
+                    enfermedad = "apple black rot"
+                    val myIntent = Intent(this.activity, Enfermedades::class.java)
+                    myIntent.putExtra("enfermedad", enfermedad)
                     myIntent.putExtra("foto", mBitmap1)
                     this.activity!!.startActivity(myIntent)
-                }else if (results?.title == "heuchera micrantha"){
+                }else if (results?.title == "squash powdery mildew"){
 
-                    plantaN = "heuchera micrantha"
-                    val myIntent = Intent(this.activity, planta::class.java)
-                    myIntent.putExtra("plantaN", plantaN)
+                    enfermedad = "squash powdery mildew"
+                    val myIntent = Intent(this.activity, Enfermedades::class.java)
+                    myIntent.putExtra("enfermedad", enfermedad)
                     myIntent.putExtra("foto", mBitmap1)
 
                     this.activity!!.startActivity(myIntent)

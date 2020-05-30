@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/planta"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Enfermedades"
+    tools:showIn="@layout/activity_enfermedades">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:id="@+id/tableLayoutF"
+            android:layout_width="330dp"
+            android:layout_height="170dp"
+            android:layout_marginLeft="20dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:paddingTop="10dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/nBotanico"
+                    android:layout_width="177dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="30dp"
+                    android:paddingBottom="5dp"
+                    android:text="Nombre botánico" />
+
+
+                <TextView
+                    android:id="@+id/txtBotanico"
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
+                    android:padding="5dp"
+                    android:text="TextView"
+                    android:textIsSelectable="false" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border2"
+                android:paddingTop="10dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/nComun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="30dp"
+                    android:paddingBottom="5dp"
+                    android:text="Nombre común" />
+
+                <TextView
+                    android:id="@+id/txtComun"
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
+                    android:padding="5dp"
+                    android:text="TextView"
+                    android:textIsSelectable="false" />
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/tableLayoutf2"
+            android:layout_width="330dp"
+            android:layout_height="705dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="35dp"
+            app:layout_constraintTop_toBottomOf="@+id/tableLayoutF">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:paddingTop="10dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/nTipo"
+                    android:layout_width="177dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="5dp"
+                    android:text="Tipo" />
+
+                <TextView
+                    android:id="@+id/txtTipo"
+                    android:layout_width="140dp"
+                    android:layout_height="70dp"
+                    android:padding="5dp"
+                    android:text="TextView"
+
+                    android:textIsSelectable="false" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border2"
+                android:paddingTop="10dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/nSintoma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="5dp"
+                    android:text="Síntoma" />
+
+                <TextView
+                    android:id="@+id/txtSintoma"
+                    android:layout_width="140dp"
+                    android:layout_height="70dp"
+                    android:padding="5dp"
+                    android:text="TextView"
+                    android:textIsSelectable="false" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:paddingTop="10dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/nSensibilidad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="5dp"
+                    android:text="Sensibilidad" />
+
+                <TextView
+                    android:id="@+id/txtSensibilidad"
+                    android:layout_width="140dp"
+                    android:layout_height="70dp"
+                    android:padding="5dp"
+                    android:text="TextView"
+                    android:textIsSelectable="false" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border2"
+                android:paddingTop="10dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/nTmpInfeccion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="5dp"
+                    android:text="Temp. Infección" />
+
+                <TextView
+                    android:id="@+id/txtTmpInfeccion"
+                    android:layout_width="140dp"
+                    android:layout_height="70dp"
+                    android:padding="5dp"
+                    android:text="TextView"
+                    android:textIsSelectable="false" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:paddingTop="10dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/nGravedad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="5dp"
+                    android:text="Gravedad" />
+
+                <TextView
+                    android:id="@+id/txtGravedad"
+                    android:layout_width="140dp"
+                    android:layout_height="70dp"
+                    android:padding="5dp"
+                    android:text="TextView"
+                    android:textIsSelectable="false" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border2"
+                android:paddingTop="10dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/nCultural"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="5dp"
+                    android:text="Tratamiento cultural" />
+
+                <TextView
+                    android:id="@+id/txtCultural"
+                    android:layout_width="140dp"
+                    android:layout_height="70dp"
+                    android:padding="5dp"
+                    android:text="TextView"
+                    android:textIsSelectable="false" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:paddingTop="10dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/nEcologico"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="5dp"
+                    android:text="Tratamiento ecológico" />
+
+                <TextView
+                    android:id="@+id/txtEcologico"
+                    android:layout_width="140dp"
+                    android:layout_height="70dp"
+                    android:padding="5dp"
+                    android:textIsSelectable="false" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:paddingTop="10dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/nGenetico"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="5dp"
+                    android:text="Tratamiento genético" />
+
+                <TextView
+                    android:id="@+id/txtGenetico"
+                    android:layout_width="140dp"
+                    android:layout_height="70dp"
+                    android:padding="5dp"
+                    android:textIsSelectable="false" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:paddingTop="10dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/nQuimico"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="5dp"
+                    android:text="Tratamiento químico" />
+
+                <TextView
+                    android:id="@+id/txtQuimico"
+                    android:layout_width="140dp"
+                    android:layout_height="70dp"
+                    android:padding="5dp"
+                    android:textIsSelectable="false" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

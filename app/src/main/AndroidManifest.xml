@@ -10,7 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".planta"
+            android:name=".Enfermedades"
+            android:label="@string/title_activity_enfermedades"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Planta"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MainActivity"

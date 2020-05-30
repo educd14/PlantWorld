@@ -3,13 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/inicio">
 
     <TextView
         android:id="@+id/titulo"
         android:layout_width="417dp"
         android:layout_height="89dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="60dp"
         android:text="@string/plant_world"
         android:textAlignment="center"
         android:textColor="#000000"
@@ -23,7 +24,7 @@
         android:id="@+id/textoenf1"
         android:layout_width="405dp"
         android:layout_height="83dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="28dp"
         android:text="@string/identifica_tu_planta"
         android:textAlignment="center"
         android:textColor="#000000"
@@ -39,10 +40,10 @@
         android:id="@+id/btngaleria"
         android:layout_width="75dp"
         android:layout_height="76dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="0dp"
         android:background="@drawable/gallery4"
         app:layout_constraintEnd_toStartOf="@+id/btncamera"
-        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textoenf1" />
 
@@ -50,7 +51,7 @@
         android:id="@+id/btncamera"
         android:layout_width="75dp"
         android:layout_height="76dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="0dp"
         android:layout_marginEnd="76dp"
         android:layout_marginRight="76dp"
         android:background="@drawable/camera4"

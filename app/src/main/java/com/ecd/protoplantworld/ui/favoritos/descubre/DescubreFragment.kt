@@ -13,7 +13,7 @@ import com.ecd.protoplantworld.R
 class DescubreFragment : Fragment(){
 
     lateinit var mPager: ViewPager
-    var path: IntArray = intArrayOf(R.drawable.clivia_miniata,R.drawable.agapanto,R.drawable.ficus_benjamina_5_0,R.drawable.crisantemo,R.drawable.hiedra)
+    var path: IntArray = intArrayOf(R.drawable.clivia_miniata,R.drawable.agapanto,R.drawable.ficus_benjamina_5_0,R.drawable.crisantemo,R.drawable.hiedra,R.drawable.abelia_grandiflora,R.drawable.juniperus_squamata,R.drawable.hyacinthus_orientalis,R.drawable.rhododendron)
 
     override fun onCreateView(
         inflater: LayoutInflater,

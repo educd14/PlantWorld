@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/planta"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".planta"
+    tools:context=".Planta"
     tools:showIn="@layout/activity_planta">
 
     <LinearLayout
@@ -16,59 +17,62 @@
 
         <TableLayout
             android:id="@+id/tableLayout2"
-            android:layout_width="393dp"
-            android:layout_height="151dp"
+            android:layout_width="330dp"
+            android:layout_height="170dp"
             android:layout_marginLeft="20dp">
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/border"
                 android:paddingTop="10dp"
                 android:paddingRight="5dp"
-                android:paddingBottom="10dp">>
+                android:paddingBottom="10dp">
 
                 <TextView
                     android:id="@+id/nBotanico"
-                    android:layout_width="wrap_content"
+                    android:layout_width="177dp"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="5dp"
+                    android:paddingLeft="15dp"
                     android:paddingTop="5dp"
                     android:paddingRight="30dp"
                     android:paddingBottom="5dp"
                     android:text="Nombre botánico" />
 
+
                 <TextView
                     android:id="@+id/txtBotanico"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="right"
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
                     android:padding="5dp"
                     android:text="TextView"
-                    android:textAlignment="gravity"
                     android:textIsSelectable="false" />
             </TableRow>
 
             <TableRow
-                android:layout_width="265dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border2"
                 android:paddingTop="10dp"
                 android:paddingRight="5dp"
-                android:paddingBottom="10dp">>
+                android:paddingBottom="10dp">
 
                 <TextView
                     android:id="@+id/nComun"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="30dp"
+                    android:paddingBottom="5dp"
                     android:text="Nombre común" />
 
                 <TextView
                     android:id="@+id/txtComun"
-                    android:layout_width="145dp"
-                    android:layout_height="80dp"
-                    android:gravity="right"
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
                     android:padding="5dp"
                     android:text="TextView"
-                    android:textAlignment="gravity"
                     android:textIsSelectable="false" />
             </TableRow>
 
@@ -76,43 +80,44 @@
 
         <TableLayout
             android:id="@+id/tableLayout"
-            android:layout_width="392dp"
+            android:layout_width="330dp"
             android:layout_height="705dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="35dp"
             app:layout_constraintTop_toBottomOf="@+id/tableLayout2">
 
             <TableRow
-                android:layout_width="376dp"
-                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
                 android:paddingTop="10dp"
                 android:paddingRight="5dp"
                 android:paddingBottom="10dp">
 
                 <TextView
                     android:id="@+id/nSuelo"
-                    android:layout_width="wrap_content"
+                    android:layout_width="177dp"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="5dp"
+                    android:paddingLeft="15dp"
                     android:paddingTop="5dp"
-                    android:paddingRight="20dp"
+                    android:paddingRight="30dp"
                     android:paddingBottom="5dp"
                     android:text="Suelo" />
 
                 <TextView
                     android:id="@+id/txtSuelo"
-                    android:layout_width="212dp"
-                    android:layout_height="66dp"
-                    android:gravity="right"
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
                     android:padding="5dp"
                     android:text="TextView"
-                    android:textAlignment="gravity"
+
                     android:textIsSelectable="false" />
             </TableRow>
 
             <TableRow
-                android:layout_width="376dp"
-                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border2"
                 android:paddingTop="10dp"
                 android:paddingRight="5dp"
                 android:paddingBottom="10dp">
@@ -121,23 +126,25 @@
                     android:id="@+id/nAgua"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="30dp"
+                    android:paddingBottom="5dp"
                     android:text="Agua" />
 
                 <TextView
                     android:id="@+id/txtAgua"
-                    android:layout_width="212dp"
-                    android:layout_height="65dp"
-                    android:gravity="right"
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
                     android:padding="5dp"
                     android:text="TextView"
-                    android:textAlignment="gravity"
                     android:textIsSelectable="false" />
             </TableRow>
 
             <TableRow
-                android:layout_width="376dp"
-                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
                 android:paddingTop="10dp"
                 android:paddingRight="5dp"
                 android:paddingBottom="10dp">
@@ -146,23 +153,25 @@
                     android:id="@+id/nSol"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="30dp"
+                    android:paddingBottom="5dp"
                     android:text="Sol" />
 
                 <TextView
                     android:id="@+id/txtSol"
-                    android:layout_width="198dp"
-                    android:layout_height="59dp"
-                    android:gravity="right"
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
                     android:padding="5dp"
                     android:text="TextView"
-                    android:textAlignment="gravity"
                     android:textIsSelectable="false" />
             </TableRow>
 
             <TableRow
-                android:layout_width="376dp"
-                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border2"
                 android:paddingTop="10dp"
                 android:paddingRight="5dp"
                 android:paddingBottom="10dp">
@@ -171,23 +180,25 @@
                     android:id="@+id/nAbono"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="30dp"
+                    android:paddingBottom="5dp"
                     android:text="Abono" />
 
                 <TextView
                     android:id="@+id/txtAbono"
-                    android:layout_width="213dp"
-                    android:layout_height="57dp"
-                    android:gravity="right"
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
                     android:padding="5dp"
                     android:text="TextView"
-                    android:textAlignment="gravity"
                     android:textIsSelectable="false" />
             </TableRow>
 
             <TableRow
-                android:layout_width="376dp"
-                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
                 android:paddingTop="10dp"
                 android:paddingRight="5dp"
                 android:paddingBottom="10dp">
@@ -196,23 +207,25 @@
                     android:id="@+id/nFloracion"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="30dp"
+                    android:paddingBottom="5dp"
                     android:text="Floración" />
 
                 <TextView
                     android:id="@+id/txtFloracion"
-                    android:layout_width="189dp"
-                    android:layout_height="60dp"
-                    android:gravity="right"
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
                     android:padding="5dp"
                     android:text="TextView"
-                    android:textAlignment="gravity"
                     android:textIsSelectable="false" />
             </TableRow>
 
             <TableRow
-                android:layout_width="376dp"
-                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border2"
                 android:paddingTop="10dp"
                 android:paddingRight="5dp"
                 android:paddingBottom="10dp">
@@ -221,23 +234,25 @@
                     android:id="@+id/nPoda"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="30dp"
+                    android:paddingBottom="5dp"
                     android:text="Poda" />
 
                 <TextView
                     android:id="@+id/txtPoda"
-                    android:layout_width="197dp"
-                    android:layout_height="57dp"
-                    android:gravity="right"
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
                     android:padding="5dp"
                     android:text="TextView"
-                    android:textAlignment="gravity"
                     android:textIsSelectable="false" />
             </TableRow>
 
             <TableRow
-                android:layout_width="376dp"
-                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
                 android:paddingTop="10dp"
                 android:paddingRight="5dp"
                 android:paddingBottom="10dp">
@@ -246,16 +261,17 @@
                     android:id="@+id/nEnfermedades"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="30dp"
+                    android:paddingBottom="5dp"
                     android:text="@string/enfermedades" />
 
                 <TextView
                     android:id="@+id/txtEnfermedades"
-                    android:layout_width="168dp"
-                    android:layout_height="64dp"
-                    android:gravity="right"
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
                     android:padding="5dp"
-                    android:textAlignment="gravity"
                     android:textIsSelectable="false" />
             </TableRow>
 
